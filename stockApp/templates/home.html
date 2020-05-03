@@ -1,0 +1,125 @@
+{%load static%}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="{%static 'style.css' %}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+  <title>Stocker</title>
+  <style media="screen">
+    body {
+      background-color: white;
+      padding: 0px;
+
+      line-height: 1.8;
+    }
+
+    .aboutUs .h6 {
+      line-height: 1.8;
+      font-size: 20px;
+    }
+
+    i {
+      font-size: 100px;
+    }
+
+    .card-text {
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    hr {
+      border-top: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="jumbotron mb-5">
+    <div class="d-flex align-items-center">
+      <img src="{%static 'Logo.png' %}" class="w-50" alt="">
+      <div class="d-flex flex-column">
+        <h1 class="display-3">Welcome!</h1>
+        <p class="h5">A Yahoo Finance stock predictor using Machine Learning</p>
+      </div>
+    </div>
+    <hr class="my-4">
+    <div class="d-flex justify-content-center ">
+
+      <a class="btn btn-danger btn-lg" href="{%url 'active-stocks'%}" role="button">Active Stocks</a>
+    </div>
+  </div>
+  <div class="container aboutUs my-5">
+    <div class="row">
+      <div class="col col-6 my-5 d-flex align-items-center justify-content-center">
+        <h1 class="display-3 text-center text-danger">About us</h1>
+      </div>
+      <div class="col col-6 my-5">
+        <p class="h6">We are a team of first year university students that are passionate about using technology to help solve some of the world’s greatest challenges. When it comes to developing solutions to these problems, we strive for both
+          efficiency
+          and resourcefulness.
+        </p>
+      </div>
+      <div class="col col-12 text-center mt-5">
+        <p class="text-danger">OUR MOTTO</p>
+      </div>
+      <div class="col col-12 mb-5 text-center">
+        <p class="h4">It’s not about making the right choice. It’s about making a choice and making it right.
+        </p>
+      </div>
+      <div class="col-12 mt-5">
+        <div class="row row-cols-2">
+          <div class="col mt-5">
+            <div class="card  border-0 mb-3">
+              <div class="card-header d-flex justify-content-center mt-3 border-0 bg-white">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <div class="card-body">
+                <p class="card-title h3 text-danger mt-n2 text-center">Purpose</p>
+                <div class="card-subtitle mb-4 mt-2 d-flex justify-content-center">
+                </div>
+                <p class="card-text">The purpose of this application is to help everyone make the right decisions when investing in the stock market. We believe that this information should be easily accessible to everyone, such that anyone can make
+                  a
+                  properly informed decision when investing in the stock market, rather than relying on potentially biased sources of information.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col mt-5">
+            <div class="card  border-0 mb-3">
+              <div class="card-header d-flex justify-content-center mt-3 border-0 bg-white">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <div class="card-body">
+                <p class="card-title h3 text-danger mt-n2 text-center">How it works?</p>
+                <div class="card-subtitle mb-4 mt-2 d-flex justify-content-center">
+                </div>
+                <p class="card-text">Our algorithm uses a machine learning model that predicts how various stocks within the stock market behave. It takes into account previous data, and then the machine learning model predicts what the stock will be
+                  for the next few days. Considering that the COVID-19 pandemic is an event that drastically changed the economy, we will only be using data starting from when the pandemic first began.
+
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
